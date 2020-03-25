@@ -1,21 +1,25 @@
 import React from "react";
+import PropTypes from "prop-types";
 
-function Food({ fav }) {
-  console.log(fav);
-  return <h1>I love {fav}</h1>;
-}
-
-const foodILike = ["kimchi", "potato", "pasta", "alcohol"];
-
-function App() {
-  return (
-    <div className="App">
-      <h1>Hello</h1>
-      {foodILike.map(food => (
-        <Food fav={food} />
-      ))}
-    </div>
-  );
+class App extends React.Component {
+  state = {
+    count: 0
+  };
+  add = () => {
+    console.log("add");
+  };
+  minus = () => {
+    console.log("minus");
+  };
+  render() {
+    return (
+      <div>
+        <h1>I am a class {this.state.count}</h1>
+        <button onClick={this.add}>Add</button>
+        <button onClick={this.minus}>Minus</button>
+      </div>
+    );
+  }
 }
 
 export default App;
