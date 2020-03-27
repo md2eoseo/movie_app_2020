@@ -1,0 +1,18 @@
+.movie {
+  display: flex;
+  padding: 3vw;
+  border: 3px solid black;
+  margin: 1vw 3vw;
+}
+
+.movie_data {
+  padding-left: 3vw;
+}
+
+.genres {
+  display: flex;
+}
+
+.genres_genre {
+  min-width: 10vw;
+}
