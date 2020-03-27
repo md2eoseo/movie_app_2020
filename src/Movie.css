@@ -3,6 +3,7 @@
   padding: 3vw;
   border: 3px solid black;
   margin: 1vw 3vw;
+  border-radius: 50px;
 }
 
 .movie_data {
