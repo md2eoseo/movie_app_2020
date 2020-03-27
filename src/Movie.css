@@ -9,6 +9,8 @@
   padding-left: 3vw;
 }
 
+/* if there are many genres in ul tag, it makes div.movie's width that much
+so, following summary text overlays on border */
 .genres {
   display: flex;
 }
